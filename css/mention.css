@@ -1,0 +1,141 @@
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#topHeader {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+#logo {
+  width: 200px;
+}
+
+#creuse {
+  height: 80px;
+  margin: auto 0;
+}
+
+#contact {
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#contact a {
+  text-decoration: none;
+  color: #4169e2;
+}
+
+#contact ul {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+}
+
+#contact li {
+  list-style: none;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid #4169e2;
+  padding: 0 20px;
+  margin: auto 0;
+}
+
+#contact li:last-child {
+  border: none;
+}
+
+header nav {
+  background-color: #4169e2;
+}
+
+header nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+}
+
+header nav li {
+  padding: 5px 15px 0 15px;
+  font-size: 1.4em;
+  color: white;
+  font-family: 'Raleway', serif;
+  font-weight: 600;
+  height: 30px;
+  margin: auto 0;
+  cursor: pointer;
+}
+
+header nav li:hover {
+  background-color: #567ffb;
+}
+
+section {
+  background-image: url("../img/bg.jpg");
+  background-size: cover;
+  min-height: 100vh;
+}
+
+.mentionCGVFiltre {
+  background-color: rgba(65, 105, 226, 0.7);
+  min-height: 100vh;
+  padding: 50px;
+}
+
+.mentionCGVFiltre div {
+  background-color: white;
+  border: 5px solid #4169e2;
+  border-radius: 20px;
+  width: 80%;
+  margin: 0 auto;
+  padding: 50px;
+}
+
+.mentionCGVFiltre p {
+  margin: 0;
+}
+
+footer {
+  background-color: #4169e2;
+  color: white;
+}
+
+footer ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+}
+
+footer li {
+  height: 30px;
+  margin: 0 20px;
+  padding: 20px 20px;
+  font-size: 1.5em;
+  font-family: 'Raleway', serif;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+footer li:hover {
+  background-color: #567ffb;
+}
+
+footer a {
+  text-decoration: none;
+  color: white;
+}
