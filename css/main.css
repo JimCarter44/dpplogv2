@@ -213,6 +213,64 @@ header nav li:hover {
   padding: 10px 0;
 }
 
+#horaires {
+  text-align: center;
+}
+
+#horaires p {
+  font-family: 'Raleway', serif;
+  font-weight: 600;
+  font-size: 2.5em;
+}
+
+#presentationGlobal {
+  background-image: url("../img/bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 500px;
+  border-radius: 0 250px 250px 0;
+  margin-right: 1%;
+}
+
+.filtreBleu {
+  background-color: rgba(65, 105, 226, 0.7);
+  height: 500px;
+  border-radius: 0 250px 250px 0;
+  color: white;
+}
+
+#pgDescription {
+  width: 45%;
+  padding: 50px;
+}
+
+#pgDescription h2 {
+  font-size: 3em;
+}
+
+#pgDescription p {
+  font-size: 1.5em;
+  font-family: Arial, serif;
+}
+
+#engagement {
+  text-align: center;
+}
+
+#engagement h2 {
+  font-size: 3em;
+  font-family: 'Raleway', serif;
+}
+
+#engagement p {
+  font-size: 1.5em;
+  font-family: Arial, serif;
+}
+
+#carte {
+  margin-top: 50px;
+}
+
 #carte h1 {
   text-align: center;
   font-size: 2em;
