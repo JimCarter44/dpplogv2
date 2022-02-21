@@ -71,7 +71,6 @@ header nav ul {
 header nav li {
   padding: 5px 15px 0 15px;
   font-size: 1.4em;
-  color: white;
   font-family: 'Raleway', serif;
   font-weight: 600;
   height: 30px;
@@ -81,6 +80,11 @@ header nav li {
 
 header nav li:hover {
   background-color: #567ffb;
+}
+
+header nav a {
+  text-decoration: none;
+  color: white;
 }
 
 #encartPub {

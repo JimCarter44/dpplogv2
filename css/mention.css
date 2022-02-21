@@ -71,7 +71,6 @@ header nav ul {
 header nav li {
   padding: 5px 15px 0 15px;
   font-size: 1.4em;
-  color: white;
   font-family: 'Raleway', serif;
   font-weight: 600;
   height: 30px;
@@ -81,6 +80,11 @@ header nav li {
 
 header nav li:hover {
   background-color: #567ffb;
+}
+
+header nav a {
+  text-decoration: none;
+  color: white;
 }
 
 section {
@@ -93,6 +97,7 @@ section {
   background-color: rgba(65, 105, 226, 0.7);
   min-height: 100vh;
   padding: 50px;
+  text-align: center;
 }
 
 .mentionCGVFiltre div {
