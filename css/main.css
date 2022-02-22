@@ -340,6 +340,37 @@ header nav a {
   width: 100%;
 }
 
+#paiement {
+  text-align: center;
+}
+
+#paiement h2 {
+  font-size: 3em;
+  font-family: 'Raleway', serif;
+}
+
+#iconePaiement ul{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  list-style: none;
+}
+
+#iconePaiement li {
+  font-size: 1.5em;
+  display: flex;
+  flex-direction: column;
+  color: #4169e2;
+  font-family: 'Raleway', serif;
+  font-weight: 500;
+}
+
+#iconePaiement i {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+  color: #4169e2;
+}
+
 footer {
   background-color: #4169e2;
   color: white;
