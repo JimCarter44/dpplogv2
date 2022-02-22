@@ -33,9 +33,18 @@ body {
   justify-content: center;
 }
 
+#contact i {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+  color: #4169e2;
+}
+
 #contact a {
   text-decoration: none;
   color: #4169e2;
+  font-family: 'Raleway', serif;
+  font-size: 1.5em;
+  font-weight: 500;
 }
 
 #contact ul {
