@@ -308,6 +308,18 @@ header nav a {
   transform: rotate(180deg) scale(1.2);
 }
 
+.cache {
+  display: none;
+  position: absolute;
+  font-family: 'Arial', serif;
+  font-size: 1.2em;
+  margin-left: 20px;
+}
+
+#iconeDescription a:hover + .cache {
+  display: block;
+}
+
 #engagement {
   text-align: center;
 }
