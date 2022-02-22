@@ -6,6 +6,7 @@ html {
 body {
   margin: 0;
   padding: 0;
+  cursor: default;
 }
 
 #topHeader {
@@ -100,11 +101,9 @@ header nav a {
 
 #encartPubDescript {
   background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 20px;
   height: 300px;
   padding: 30px;
-}
-
-#encartPubDescript {
   color: white;
 }
 
@@ -136,6 +135,7 @@ header nav a {
   margin-right: 50px;
   -webkit-box-shadow: 0 0 15px 5px rgba(0,0,0,0.3);
   box-shadow: 0 0 15px 5px rgba(0,0,0,0.3);
+  transition: 0.5s ease-in-out;
 }
 
 #promo2 {
@@ -143,6 +143,15 @@ header nav a {
   border-radius: 10px;
   -webkit-box-shadow: 0 0 15px 5px rgba(0,0,0,0.3);
   box-shadow: 0 0 15px 5px rgba(0,0,0,0.3);
+  transition: 0.5s ease-in-out;
+}
+
+#promo1:hover {
+  transform: scale(1.05);
+}
+
+#promo2:hover {
+  transform: scale(1.05);
 }
 
 .promoTitre h4 {
