@@ -286,6 +286,10 @@ header nav a {
   flex-wrap: wrap;
 }
 
+#iconeDescription a {
+  color: white;
+}
+
 #iconeDescriptionHaut, #iconeDescriptionBas {
   display: flex;
   flex-direction: row;
