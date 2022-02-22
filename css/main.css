@@ -259,6 +259,8 @@ header nav a {
   border-radius: 0 250px 250px 0;
   color: white;
   padding: 10px 0;
+  display: flex;
+  flex-direction: row;
 }
 
 #pgDescription {
@@ -273,6 +275,33 @@ header nav a {
 #pgDescription p {
   font-size: 1.5em;
   font-family: Arial, serif;
+}
+
+#iconeDescription {
+  width: 30%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+#iconeDescriptionHaut, #iconeDescriptionBas {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 50px 0;
+}
+
+#iconeDescription i {
+  font-size: 6em;
+  margin: 10px 20px;
+  transition: transform .7s ease-in-out;
+}
+
+#iconeDescription i:hover {
+  transform: rotate(180deg) scale(1.2);
 }
 
 #engagement {
