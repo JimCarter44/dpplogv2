@@ -50,6 +50,8 @@ body {
 #contact ul {
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
   margin: 0;
 }
 
@@ -75,6 +77,7 @@ header nav ul {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  flex-wrap: wrap;
   list-style: none;
   margin: 0;
 }
@@ -136,6 +139,7 @@ header nav a {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  flex-wrap: wrap;
   text-align: center;
 }
 
@@ -261,6 +265,7 @@ header nav a {
   padding: 10px 0;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
 }
 
 #pgDescription {
@@ -369,6 +374,7 @@ header nav a {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  flex-wrap: wrap;
   list-style: none;
 }
 
@@ -396,6 +402,7 @@ footer ul {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  flex-wrap: wrap;
   list-style: none;
   margin: 0;
 }
@@ -417,4 +424,124 @@ footer li:hover {
 footer a {
   text-decoration: none;
   color: white;
+}
+
+/* Responsive */
+@media screen and (max-width: 1605px) {
+  #creuse {
+    display: none;
+  }
+  #encartPub {
+    flex-direction: column;
+    height: 100%;
+  }
+  #encartPubDescript {
+    height: 100%;
+    margin: 10px 0  ;
+  }
+  #promo {
+    padding-bottom: 20px;
+  }
+}
+@media screen and (max-width: 1719px) {
+  footer li {
+    height: 100%;
+    font-size: 1em;
+  }
+}
+@media screen and (max-width: 1040px) {
+  #topHeader {
+    flex-direction: column;
+  }
+  #topHeader a {
+    margin: 0 auto 10px auto;
+  }
+  #logo {
+    width: 150px;
+  }
+  #contact i, #iconePaiement i {
+    font-size: 2em;
+  }
+  #contact a, #iconePaiement li {
+    font-size: 1em;
+  }
+  #encartPubDescript h3 {
+    font-size: 1.5em;
+  }
+  #encartPubDescript p, #encartPubDescript ul {
+    font-size: 1em;
+  }
+  #pgDescription h2 {
+    font-size: 2em;
+  }
+  #pgDescription p {
+    font-size: 1em;
+  }
+  #iconeDescription i {
+    font-size: 4em;
+  }
+  #horaires p {
+    font-size: 2em;
+  }
+  #engagement h2, #paiement h2 {
+    font-size: 2.5em;
+  }
+  #engagement p {
+    font-size: 1em;
+  }
+}
+@media screen and (max-width: 860px) {
+  header nav li {
+    font-size: 1em;
+    padding: 15px 15px 0 15px;
+  }
+}
+@media screen and (max-width: 830px) {
+  #promo {
+    flex-direction: column;
+  }
+  #promo1 {
+    margin-bottom: 20px;
+    margin-right: 0;
+  }
+}
+@media screen and (max-width: 783px) {
+  #iconeDescription i {
+    font-size: 3em;
+  }
+}
+@media screen and (max-width: 660px) {
+  #iconeDescription {
+    display: none;
+  }
+  #presentationGlobal {
+    border-radius: 0 150px 150px 0;
+  }
+  .filtreBleu {
+    border-radius: 0 150px 150px 0;
+  }
+  #pgDescription {
+    width: 80%;
+    padding: 10px;
+  }
+  #contact ul {
+    padding-left: 0;
+  }
+  #contact i {
+    display: none;
+  }
+  #contact li {
+    border-right: none;
+  }
+  #iconePaiement ul, header nav ul, footer ul {
+    padding-left: 0;
+  }
+}
+@media screen and (max-width: 481px) {
+  #horaires p, #engagement h2, #carte h1, #paiement h2 {
+    font-size: 1.5em;
+  }
+  #promo {
+    display: none;
+  }
 }

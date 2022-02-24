@@ -7,6 +7,14 @@ html {
 body {
   margin: 0;
   padding: 0;
+  min-height: 100vh;
+}
+
+.affichagePrincipal {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 89vh;
 }
 
 #topHeader {
@@ -49,6 +57,8 @@ body {
 #contact ul {
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
   margin: 0;
 }
 
@@ -74,6 +84,7 @@ header nav ul {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  flex-wrap: wrap;
   list-style: none;
   margin: 0;
 }
@@ -115,6 +126,7 @@ header nav a {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  flex-wrap: wrap;
   text-align: left;
   font-family: 'Arial', serif;
   font-size: 1.5em;
@@ -136,6 +148,7 @@ header nav a {
   color: white;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   padding: 50px 0;
 }
 
@@ -202,6 +215,7 @@ header nav a {
 #listeFormation {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
 }
 
@@ -259,6 +273,7 @@ footer ul {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  flex-wrap: wrap;
   list-style: none;
   margin: 0;
 }
@@ -280,4 +295,108 @@ footer li:hover {
 footer a {
   text-decoration: none;
   color: white;
+}
+
+/* Responsive */
+@media screen and (max-width: 1605px) {
+  #creuse {
+    display: none;
+  }
+  #topHeader {
+    flex-direction: column;
+  }
+  #topHeader a {
+    margin: 0 auto 10px auto;
+  }
+}
+@media screen and (max-width: 1719px) {
+  footer li {
+    height: 100%;
+    font-size: 1em;
+  }
+}
+@media screen and (max-width: 1440px) {
+  .offreFiltreBleuGauche img, .offreFiltreBleuDroite img {
+    height: 250px;
+  }
+  .offreDescript h3 {
+    font-size: 2em;
+  }
+  .offreDescript p {
+    font-size: 1em;
+  }
+  .offrePrix h2 {
+    font-size: 3em;
+  }
+}
+@media screen and (max-width: 1040px) {
+  #topHeader {
+    flex-direction: column;
+  }
+  #logo {
+    width: 150px;
+  }
+  #contact i {
+    font-size: 2em;
+  }
+  #contact a {
+    font-size: 1em;
+  }
+}
+@media screen and (max-width: 927px) {
+  .offreFiltreBleuGauche img, .offreFiltreBleuDroite img {
+    display: none;
+  }
+  .offreDescript {
+    width: 80%;
+  }
+  .titleOffre h1 {
+    font-size: 1.5em;
+  }
+  .titleOffre p {
+    font-size: 1em;
+  }
+}
+@media screen and (max-width: 860px) {
+  header nav li {
+    font-size: 1em;
+    padding: 15px 15px 0 15px;
+  }
+}
+@media screen and (max-width: 660px) {
+  .filtreBleu {
+    border-radius: 0 150px 150px 0;
+  }
+  #contact ul {
+    padding-left: 0;
+  }
+  #contact i {
+    display: none;
+  }
+  #contact li {
+    border-right: none;
+  }
+  header nav ul, footer ul {
+    padding-left: 0;
+  }
+  .offreDescript h3 {
+    font-size: 1.5em;
+  }
+  .offrePrix h2 {
+    font-size: 2.5em;
+  }
+}
+@media screen and (max-width: 481px) {
+  .filtreBleu, .offreGauche, .offreDroite, .offreFiltreBleuGauche, .offreFiltreBleuDroite {
+    border-radius: 0;
+  }
+  .offrePrix p {
+    font-size: 0.7em;
+  }
+  .offrePrix h2 {
+    font-size: 2em;
+  }
+  #titleOffreListe {
+    font-size: 1em;
+  }
 }

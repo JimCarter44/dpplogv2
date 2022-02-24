@@ -49,6 +49,8 @@ body {
 #contact ul {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
   margin: 0;
 }
 
@@ -74,6 +76,7 @@ header nav ul {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  flex-wrap: wrap;
   list-style: none;
   margin: 0;
 }
@@ -132,6 +135,7 @@ footer ul {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  flex-wrap: wrap;
   list-style: none;
   margin: 0;
 }
@@ -153,4 +157,63 @@ footer li:hover {
 footer a {
   text-decoration: none;
   color: white;
+}
+
+/* Responsive */
+@media screen and (max-width: 1605px) {
+  #creuse {
+    display: none;
+  }
+}
+@media screen and (max-width: 1719px) {
+  footer li {
+    height: 100%;
+    font-size: 1em;
+  }
+}
+@media screen and (max-width: 1040px) {
+  #topHeader {
+    flex-direction: column;
+  }
+  #topHeader a {
+    margin: 0 auto 10px auto;
+  }
+  #logo {
+    width: 150px;
+  }
+  #contact i, #iconePaiement i {
+    font-size: 2em;
+  }
+  #contact a, #iconePaiement li {
+    font-size: 1em;
+  }
+}
+@media screen and (max-width: 860px) {
+  header nav ul {
+    padding-left: 0;
+  }
+  header nav li {
+    font-size: 1em;
+    padding: 15px 15px 0 15px;
+  }
+}
+@media screen and (max-width: 660px) {
+  #iconeDescription {
+    display: none;
+  }
+  #contact ul {
+    padding-left: 0;
+  }
+  #contact i {
+    display: none;
+  }
+  #contact li {
+    border-right: none;
+  }
+  footer ul {
+    padding-left: 0;
+  }
+  .mentionCGVFiltre {
+    padding: 50px 15px;
+  }
 }
