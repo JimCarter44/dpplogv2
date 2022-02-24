@@ -209,6 +209,14 @@ header nav a {
   margin: 0 2% 20px 2%;
 }
 
+#teteDeListeGauche {
+  width: 478px;
+}
+
+#teteDeListeDroite {
+  width: 794px;
+}
+
 .teteDeListe h4 {
   font-family: 'Raleway', serif;
   font-size: 1.6em;
@@ -239,7 +247,7 @@ header nav a {
   display: none;
   text-align: left;
   border: 5px solid #4169e2;
-  padding-left: 1%;
+  padding-left: 20px;
 }
 
 footer {
