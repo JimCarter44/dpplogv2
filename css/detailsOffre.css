@@ -199,6 +199,49 @@ header nav a {
   margin: auto;
 }
 
+#listeFormation {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#teteDeListeGauche, #teteDeListeDroite {
+  margin: 0 2% 20px 2%;
+}
+
+.teteDeListe h4 {
+  font-family: 'Raleway', serif;
+  font-size: 1.6em;
+  margin: 0;
+}
+
+.teteDeListe i {
+  font-size: 1.6em;
+  margin-right: 10px;
+}
+
+#initiation, #windows, #configuration, #dossiers, #fichiers, #securite, #internet, #recherche, #telechargement, #messagerie {
+  display: flex;
+  flex-direction: row;
+  background-color: #4169e2;
+  color: white;
+  padding: 10px 20px 10px 20px;
+  cursor: pointer;
+}
+
+#initiation:hover, #windows:hover, #configuration:hover, #dossiers:hover, #fichiers:hover, #securite:hover, #internet:hover, #recherche:hover, #telechargement:hover, #messagerie:hover {
+  background-color: #567ffb;
+}
+
+
+
+#initiationP, #windowsP, #configurationP, #dossierP, #fichiersP, #securiteP, #internetP, #rechercheP, #telechargementP, #messagerieP {
+  display: none;
+  text-align: left;
+  border: 5px solid #4169e2;
+  padding-left: 1%;
+}
+
 footer {
   background-color: #4169e2;
   color: white;

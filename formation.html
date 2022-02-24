@@ -22,6 +22,7 @@
   <meta name="msapplication-TileColor" content="#da532c">
   <meta name="theme-color" content="#ffffff">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -69,57 +70,94 @@
 </section>
 <section class="titleOffre">
   <h1>PROGRAMME DE LA FORMATION</h1>
-  <p><strong>INITIATION A L'ORDINATEUR</strong></p>
-  <p>Architecture matérielle : l'écran, le clavier, la souris.</p>
-  <p>Notion de réseaux.</p>
-  <p><strong>À LA DÉCOUVERTE DE WINDOWS</strong></p>
-  <p>Le bureau.</p>
-  <p>Barre des tâches.</p>
-  <p>Utilisation de la souris.</p>
-  <p>Manipulation des fenêtres.</p>
-  <p><strong>PANNEAU DE CONFIGURATION</strong></p>
-  <p>Souris.</p>
-  <p>Clavier.</p>
-  <p>Affichage.</p>
-  <p><strong>GÉRER DES DOSSIERS</strong></p>
-  <p>Utilisation de l'explorateur.</p>
-  <p>Créer un dossier.</p>
-  <p>Nommer un dossier.</p>
-  <p>Déplacer un dossier.</p>
-  <p>Supprimer un dossier.</p>
-  <p><strong>GESTION DES FICHIERS</strong></p>
-  <p>Enregistrer un fichier.</p>
-  <p>Copier un fichier.</p>
-  <p>Déplacer un fichier.</p>
-  <p>Effacer un fichier.</p>
-  <p>Récupérer un fichier dans la corbeille.</p>
-  <p>Supprimer définitivement un fichier.</p>
-  <p>Renommer un fichier.</p>
-  <p>Rechercher un fichier.</p>
-  <p><strong>SÉCURITÉ INFORMATIQUE</strong></p>
-  <p>L'antivirus.</p>
-  <p>L'importance des sauvegardes : prévenir la perte des données.</p>
-  <p><strong>SAVOIR UTILISER INTERNET</strong></p>
-  <p>Les différents types de connexion.</p>
-  <p>Comment fonctionne Internet .</p>
-  <p>Naviguer sur le web.</p>
-  <p>Passer d'une page à l'autre.</p>
-  <p>Visiter un site sécurisé.</p>
-  <p>Les onglets de navigation.</p>
-  <p>Utiliser l'historique.</p>
-  <p>Configuration et options du navigateur.</p>
-  <p><strong>RECHERCHE SUR INTERNET LES MOTEURS DE RECHERCHE</strong></p>
-  <p>Utiliser les moteurs de recherche.</p>
-  <p>Chercher et trouver sur Internet.</p>
-  <p>Rechercher une image sur internet.</p>
-  <p>Enregistrer une image.</p>
-  <p><strong>TÉLÉCHARGEMENT</strong></p>
-  <p>Téléchargements sur Internet.</p>
-  <p><strong>MESSAGERIE ET E-MAILS</strong></p>
-  <p>La messagerie Gmail.</p>
-  <p>Envoyer et recevoir un mail.</p>
-  <p>Retrouver un mail.</p>
-  <p>Gestion des pièces jointes.</p>
+  <div id="listeFormation">
+    <div id="teteDeListeGauche">
+      <div class="teteDeListe">
+        <div id="initiation">
+        <i class="fa-solid fa-angle-down"></i><h4>INITIATION A L'ORDINATEUR</h4>
+        </div>
+        <div id="initiationP">
+          <p>Architecture matérielle : l'écran, le clavier, la souris.<br>Notion de réseaux.</p>
+        </div>
+      </div>
+      <div class="teteDeListe">
+        <div id="windows">
+          <i class="fa-solid fa-angle-down"></i><h4>À LA DÉCOUVERTE DE WINDOWS</h4>
+        </div>
+        <div id="windowsP">
+          <p>Le bureau.<br>Barre des tâches.<br>Utilisation de la souris.<br>Manipulation des fenêtres.</p>
+        </div>
+      </div>
+      <div class="teteDeListe">
+        <div id="configuration">
+          <i class="fa-solid fa-angle-down"></i><h4>PANNEAU DE CONFIGURATION</h4>
+        </div>
+        <div id="configurationP">
+          <p>Souris.<br>Clavier.<br>Affichage.</p>
+        </div>
+      </div>
+      <div class="teteDeListe">
+        <div id="dossiers">
+          <i class="fa-solid fa-angle-down"></i><h4>GÉRER DES DOSSIERS</h4>
+        </div>
+        <div id="dossierP">
+          <p>Utilisation de l'explorateur.<br>Créer un dossier.<br>Nommer un dossier.<br>Déplacer un dossier.<br>Supprimer un dossier.</p>
+        </div>
+      </div>
+      <div class="teteDeListe">
+        <div id="fichiers">
+          <i class="fa-solid fa-angle-down"></i><h4>GESTION DES FICHIERS</h4>
+        </div>
+        <div id="fichiersP">
+          <p>Enregistrer un fichier.<br>Copier un fichier.<br>Déplacer un fichier.<br>Effacer un fichier.<br>Récupérer un fichier dans la corbeille.<br>Supprimer définitivement un fichier.
+          <br>Renommer un fichier.<br>Rechercher un fichier.</p>
+        </div>
+      </div>
+    </div>
+    <div id="teteDeListeDroite">
+      <div class="teteDeListe">
+        <div id="securite">
+          <i class="fa-solid fa-angle-down"></i><h4>SÉCURITÉ INFORMATIQUE</h4>
+        </div>
+        <div id="securiteP">
+          <p>L'antivirus.<br>L'importance des sauvegardes : prévenir la perte des données.</p>
+        </div>
+      </div>
+      <div class="teteDeListe">
+        <div id="internet">
+          <i class="fa-solid fa-angle-down"></i><h4>SAVOIR UTILISER INTERNET</h4>
+        </div>
+        <div id="internetP">
+          <p>Les différents types de connexion.<br>Comment fonctionne Internet .<br>Naviguer sur le web.<br>Passer d'une page à l'autre.<br>Visiter un site sécurisé.<br>
+            Les onglets de navigation.<br>Utiliser l'historique.<br>Configuration et options du navigateur.</p>
+        </div>
+      </div>
+      <div class="teteDeListe">
+        <div id="recherche">
+          <i class="fa-solid fa-angle-down"></i><h4>RECHERCHE SUR INTERNET LES MOTEURS DE RECHERCHE</h4>
+        </div>
+        <div id="rechercheP">
+          <p>Utiliser les moteurs de recherche.<br>Chercher et trouver sur Internet.<br>Rechercher une image sur internet.<br>Enregistrer une image.</p>
+        </div>
+      </div>
+      <div class="teteDeListe">
+        <div id="telechargement">
+          <i class="fa-solid fa-angle-down"></i><h4>TÉLÉCHARGEMENT</h4>
+        </div>
+        <div id="telechargementP">
+          <p>Téléchargements sur Internet.</p>
+        </div>
+      </div>
+      <div class="teteDeListe">
+        <div id="messagerie">
+          <i class="fa-solid fa-angle-down"></i><h4>MESSAGERIE ET E-MAILS</h4>
+        </div>
+        <div id="messagerieP">
+          <p>La messagerie Gmail.<br>Envoyer et recevoir un mail.<br>Retrouver un mail.<br>Gestion des pièces jointes.</p>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
 <footer>
   <ul>
@@ -128,5 +166,6 @@
     <li>Numéros de SIRET : XXXXXXXXXXXXXX</li>
   </ul>
 </footer>
+<script src="js/main.js"></script>
 </body>
 </html>
