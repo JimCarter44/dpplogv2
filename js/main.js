@@ -12,7 +12,7 @@ jQuery(document).ready(function () {
   let initiationP = $("#initiationP");
   let windowsP = $("#windowsP");
   let configurationP = $("#configurationP");
-  let dossiersP = $("#dossiersP");
+  let dossiersP = $("#dossierP");
   let fichiersP = $("#fichiersP");
   let securiteP = $("#securiteP");
   let internetP = $("#internetP");
